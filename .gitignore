@@ -1,2 +1,9 @@
+# Ignore environment files
 .env
 !.env.example
+
+# Ignored react files
+/build
+
+# Ignored Go files
+*.exe
