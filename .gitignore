@@ -1,9 +1,32 @@
-# Ignore environment files
+# Environment files
 .env
+.env.*
 !.env.example
 
-# Ignored react files
+# React / Node
+node_modules/
 /build
+dist/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Ignored Go files
+# Go
 *.exe
+*.test
+/backend/coverage.out
+/backend/waiver_output.pdf
+
+# PostgreSQL local data and backups
+/.postgres-data/
+/postgres-data/
+/pgdata/
+*.dump
+*.backup
+*.sql.gz
+
+# OS files
+.DS_Store
+Thumbs.db
